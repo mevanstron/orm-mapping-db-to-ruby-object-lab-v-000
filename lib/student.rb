@@ -63,7 +63,8 @@ class Student
       SELECT * FROM students WHERE grade = 10 LIMIT 1
       SQL
 
-    array = DB[:conn].execute(sql)
+    row = DB[:conn].execute(sql).first
+    self.new_from_db(row)
   end
 
   def save
