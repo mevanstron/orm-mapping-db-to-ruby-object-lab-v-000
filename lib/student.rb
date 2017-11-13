@@ -34,7 +34,7 @@ class Student
       SELECT * FROM students WHERE grade = 9
       SQL
       array = DB[:conn].execute(sql)
-      
+
   end
 
   def save
