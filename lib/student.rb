@@ -27,7 +27,7 @@ class Student
     sql = <<-SQL
       SELECT * FROM students WHERE name = ?
       SQL
-      row = DB[:conn].execute(sql, name)
+      row = DB[:conn].execute(sql, name).first
       binding.pry
   end
 
