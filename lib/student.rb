@@ -13,7 +13,7 @@ class Student
     student = Student.new
     student.id = row[0]
     student.name = row[1]
-    binding.pry
+
     student.grade = row[2]
 
   end
