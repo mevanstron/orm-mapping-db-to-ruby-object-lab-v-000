@@ -36,7 +36,7 @@ class Student
       array = DB[:conn].execute(sql)
       binding.pry
   end
-  
+
   def save
     sql = <<-SQL
       INSERT INTO students (name, grade)
