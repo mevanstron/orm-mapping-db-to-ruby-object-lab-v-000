@@ -11,9 +11,9 @@ class Student
     # create a new Student object given a row from the database
 
     student = Student.new
-    @id = row[0]
-    @name = row[1]
-    @grade = row[2]
+    student.id = row[0]
+    student.name = row[1]
+    student.grade = row[2]
 
   end
 
